@@ -1,9 +1,9 @@
 name: 什么值得买签到
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'
+  workflow_dispatch:  
   watch:
     types: started
   repository_dispatch:
