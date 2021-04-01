@@ -3,9 +3,11 @@ name: 什么值得买签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: '0 1 * * *'
   watch:
     types: started
+  repository_dispatch:
+    types: Sync_Actions_smzdm  
 
 jobs:
   build:
